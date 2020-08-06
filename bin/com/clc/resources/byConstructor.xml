@@ -1,0 +1,17 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans> 
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+	<!-- <bean id="car" class="com.clc.Car" autowire="constructor"> -->
+	<bean id="car" class="com.clc.Car">
+		<property name="carName" value="Toyota"></property>
+	</bean>
+	<bean id="engine" class="com.clc.Engine">
+		<property name="modelYear" value="2018"></property>
+	</bean>
+	<bean id="vSpeed" class="com.clc.Speed">
+		<property name="vSpeed" value="230kmph"></property>
+	</bean>
+	
+	
+</beans>
